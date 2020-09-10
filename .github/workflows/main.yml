@@ -1,10 +1,10 @@
 name: WZTest
 on: 
   push:
-    tags: 
+    branches: 
       - master
   pull_request:
-    tags: 
+    branches: 
       - master
 jobs: 
   my_first_job:
