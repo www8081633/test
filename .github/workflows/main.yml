@@ -9,7 +9,7 @@ on:
 jobs: 
   my_first_job:
     name: 第一个job
-    runs-on: ubuntu-latest，ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: 打印一个pretting
         env:
@@ -20,7 +20,7 @@ jobs:
         run: 
          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.  
   my_second_job:
-    runs-on: ubuntu-latest，ubuntu-18.04
+    runs-on: ubuntu-latest
     needs: [my_first_job]
     steps:
       - name: 打印第二个内容
